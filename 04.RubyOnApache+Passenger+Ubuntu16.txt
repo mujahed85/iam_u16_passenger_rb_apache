@@ -1,0 +1,30 @@
+Ref: https://www.phusionpassenger.com/library/deploy/apache/deploy/ruby/
+passenger-config about ruby-command
+MyPathWas:   /home/ubuntu/.rbenv/versions/2.4.2/bin/ruby
+******************************************************************
+passenger-config was invoked through the following Ruby interpreter:
+  Command: /home/ubuntu/.rbenv/versions/2.4.2/bin/ruby
+  Version: ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-linux]
+  To use in Apache: PassengerRuby /home/ubuntu/.rbenv/versions/2.4.2/bin/ruby
+  To use in Nginx : passenger_ruby /home/ubuntu/.rbenv/versions/2.4.2/bin/ruby
+  To use with Standalone: /home/ubuntu/.rbenv/versions/2.4.2/bin/ruby /usr/bin/passenger start
+
+The following Ruby interpreter was found first in $PATH:
+  Command: /home/ubuntu/.rbenv/versions/2.4.2/bin/ruby
+  Version: ruby 2.4.2p198 (2017-09-14 revision 59899) [x86_64-linux]
+  To use in Apache: PassengerRuby /home/ubuntu/.rbenv/versions/2.4.2/bin/ruby
+  To use in Nginx : passenger_ruby /home/ubuntu/.rbenv/versions/2.4.2/bin/ruby
+  To use with Standalone: /home/ubuntu/.rbenv/versions/2.4.2/bin/ruby /usr/bin/passenger start
+
+## Notes for RVM users
+Do you want to know which command to use for a different Ruby interpreter? 'rvm use' that Ruby interpreter, then re-run 'passenger-config about ruby-command'.
+******************************************************************
+/etc/apache2/apache2.conf
+
+
+--------------------------------
+git clone https://github.com/phusion/passenger-ruby-rails-demo.git
+cd passenger-ruby-rails-demo
+
+git clone https://github.com/phusion/passenger-ruby-sinatra-demo.git
+
